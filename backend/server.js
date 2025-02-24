@@ -7,9 +7,11 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get("/library", (req, res) => {
-    res.send("Service is Running but Updated");
-});
+// app.get("/library", (req, res) => {
+//     res.send("Service is Running but Updated");
+// });
+
+app.post("/postbook", (req, res) => {})
 
 app.listen(PORT, () => {
     connectDB();
