@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const librarySchema = new mongoose.Schema({
+const bookSchema = new mongoose.Schema({
     title: {
         type: String,
         required: [true, 'Please insert Title'],
@@ -36,10 +36,10 @@ const librarySchema = new mongoose.Schema({
     timestamps: true
 });
 
-librarySchema.index({ title: 1 });
-librarySchema.index({ author: 1 });
-librarySchema.index({ genre: 1 });
+bookSchema.index({ title: 1 });
+bookSchema.index({ author: 1 });
+bookSchema.index({ genre: 1 });
 
-const libraryModel = mongoose.model('Library', librarySchema)
+const Book = mongoose.model('Book', bookSchema);
 
-export default libraryModel;
+export { Book };
