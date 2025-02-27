@@ -1,0 +1,66 @@
+projects: "iragca/7"
+name: "📖 [Documentation]"
+description: Report missing, unclear, or incorrect documentation.
+title: "[Docs]: "
+labels: ["documentation"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: "## 📌 Issue Summary\nDescribe the issue with the documentation clearly."
+
+  - type: input
+    id: location
+    attributes:
+      label: "🔍 Location"
+      description: "Provide the file path, URL, or section where the issue occurs."
+      placeholder: "e.g., docs/setup-guide.md, Section: Installation"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Description of the Problem"
+      description: "Explain what is incorrect, missing, or unclear."
+      placeholder: "The installation instructions are outdated..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_solution
+    attributes:
+      label: "💡 Suggested Solution"
+      description: "Provide a suggestion for how this could be improved."
+      placeholder: "Update the installation command to match the latest version."
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: "🛠 Steps to Reproduce (if applicable)"
+      description: "List steps to reproduce any issues caused by the documentation."
+      placeholder: |
+        1. Follow the instructions in `docs/setup.md`
+        2. Run the given command
+        3. See an error message about a missing dependency
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "📷 Screenshots (if applicable)"
+      description: "Attach screenshots or logs to illustrate the issue."
+      placeholder: "Drag & drop images or paste links here."
+
+  - type: checkboxes
+    id: acceptance_criteria
+    attributes:
+      label: "✅ Acceptance Criteria"
+      description: "Check all that apply for a successful fix."
+      options:
+        - label: "The information is clear and concise"
+        - label: "The formatting follows the project's style guide"
+        - label: "No broken links or typos"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "📚 Additional Context"
+      description: "Any other context, related issues, or references?"
