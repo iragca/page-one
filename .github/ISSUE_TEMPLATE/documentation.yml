@@ -1,7 +1,7 @@
 projects: "iragca/7"
-name: "📖 [Documentation]"
+name: "📖 Documentation"
 description: Report missing, unclear, or incorrect documentation.
-title: "[Docs]: "
+title: "📖 [Docs]: "
 labels: ["documentation"]
 assignees: []
 body:
