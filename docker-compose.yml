@@ -1,0 +1,21 @@
+services:
+  page-one_mongodb:
+    container_name: page-one_mongodb
+    image: 'bitnami/mongodb:latest'
+    ports:
+      - '27017:27017'
+    healthcheck:
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')" ]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+
+  page-one_insert_data:
+    container_name: page-one_insert_data
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      page-one_mongodb:
+        condition: service_healthy
+    command: [ "sh", "-c", "python insert_data.py" ]

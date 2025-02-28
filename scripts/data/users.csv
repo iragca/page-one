@@ -1,0 +1,11 @@
+username,email,password,role,profile_picture,isVerified
+"johndoe","johndoe@example.com","$2a$10$abcdefghijABCDEFGHIJ12345","user","https://placehold.co/600x400",true
+"janedoe","janedoe@example.com","$2a$10$abcdefghijABCDEFGHIJ67890","admin","https://placehold.co/600x400",false
+"alice123","alice@example.com","$2a$10$abcdefghijABCDEFGHIJ13579","user","https://placehold.co/600x400",true
+"bob456","bob@example.com","$2a$10$abcdefghijABCDEFGHIJ24680","user","https://placehold.co/600x400",false
+"charlie789","charlie@example.com","$2a$10$abcdefghijABCDEFGHIJ97531","admin","https://placehold.co/600x400",true
+"eve_hacker","eve@example.com","$2a$10$abcdefghijABCDEFGHIJ86420","user","https://placehold.co/600x400",false
+"michael_scott","mscott@example.com","$2a$10$abcdefghijABCDEFGHIJ90909","user","https://placehold.co/600x400",true
+"dwight_schrute","dwight@example.com","$2a$10$abcdefghijABCDEFGHIJ10101","admin","https://placehold.co/600x400",false
+"pam_beesly","pam@example.com","$2a$10$abcdefghijABCDEFGHIJ12121","user","https://placehold.co/600x400",true
+"jim_halpert","jim@example.com","$2a$10$abcdefghijABCDEFGHIJ14141","user","https://placehold.co/600x400",false
