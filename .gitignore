@@ -8,6 +8,9 @@ yarn.lock
 .env.local
 .env.*.local
 
+# Python
+.venv
+
 # Logs
 logs
 *.log
