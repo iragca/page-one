@@ -1,5 +1,4 @@
 import express from 'express';
-import { connectDB } from './config/db.js';
 
 // Import routes
 import index from './routes/index.js';
@@ -27,14 +26,5 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Something went wrong!' });
 });
-
-// Connect to DB
-try {
-  connectDB();
-} catch (error) {
-  console.error(`No DB connection: ${error.message}`);
-  process.exit(1);
-}
-
 
 export default app;
