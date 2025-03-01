@@ -61,7 +61,7 @@ try:
     result_books = books.insert_many(books_data.to_dicts())
 
     logging.info(f"Inserting data into collection: {users}")
-    result_users = books.insert_many(users_data.to_dicts())
+    result_users = users.insert_many(users_data.to_dicts())
 
     logging.info("Data inserted successfully!")
     try:
